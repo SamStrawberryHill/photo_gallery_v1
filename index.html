@@ -9,46 +9,86 @@
       <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
     </head>
     <body>
-      <form>
-        <input type="search" name="searchphotos" placeholder="Search Photos">
-      </form>
-      <div id="lightgallery">
-        <a href="Photos/Thumbnails/01.jpg">
-        <img src="Photos/Thumbnails/01.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/02.jpg">
-        <img src="Photos/Thumbnails/02.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/03.jpg">
-        <img src="Photos/Thumbnails/03.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/04.jpg">
-        <img src="Photos/Thumbnails/04.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/05.jpg">
-        <img src="Photos/Thumbnails/05.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/06.jpg">
-        <img src="Photos/Thumbnails/06.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/07.jpg">
-        <img src="Photos/Thumbnails/07.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/08.jpg">
-        <img src="Photos/Thumbnails/08.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/09.jpg">
-        <img src="Photos/Thumbnails/09.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/10.jpg">
-        <img src="Photos/Thumbnails/10.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/11.jpg">
-        <img src="Photos/Thumbnails/11.jpg" />
-        </a>
-        <a href="Photos/Thumbnails/12.jpg">
-        <img src="Photos/Thumbnails/12.jpg" />
-        </a>
+      <header>
+        <form>
+          <input type="search" name="searchphotos" placeholder="Search Photos">
+        </form>
+      </header>
+      <div id="lightbox">
+        <ul id="lightGallery">
+          <li>
+            <a href="Photos/01.jpg">
+            <img src="Photos/Thumbnails/01.jpg" alt="hay bales"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/02.jpg">
+            <img src="Photos/Thumbnails/02.jpg" alt="lake"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/03.jpg">
+            <img src="Photos/Thumbnails/03.jpg" alt="canyon"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/04.jpg">
+            <img src="Photos/Thumbnails/04.jpg" alt="iceberg"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/05.jpg">
+            <img src="Photos/Thumbnails/05.jpg" alt="desert"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/06.jpg">
+            <img src="Photos/Thumbnails/06.jpg" alt="fall"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/07.jpg">
+            <img src="Photos/Thumbnails/07.jpg" alt="plantation"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/08.jpg">
+            <img src="Photos/Thumbnails/08.jpg" alt="dunes"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/09.jpg">
+            <img src="Photos/Thumbnails/09.jpg" alt="countryside lane"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/10.jpg">
+            <img src="Photos/Thumbnails/10.jpg" alt="sunset"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/11.jpg">
+            <img src="Photos/Thumbnails/11.jpg" alt="cave"/>
+            </a>
+          </li>
+          <li>
+            <a href="Photos/12.jpg">
+            <img src="Photos/Thumbnails/12.jpg" width: "100%"/>
+            </a>
+          </li>
+        </ul>
         </div>
+        <div class = "arrows">
+        <div class = "previous">
+            Previous
+        </div>
+
+        <div class = "next">
+            Next
+        </div>
+</div>
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="scripts.js" type="text/javascript" charset="utf-8"></script>
     </body>
     </html>

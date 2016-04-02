@@ -1,5 +1,7 @@
-var $overlay = $('<div> id = "overlay"></div>');
-var image = $("<img>");
+
+$(document).ready(function() {
+var $overlay = $('<div> id="overlay"></div>');
+var $image = $("<img>");
 var $caption = $("<p></p>");
 
 //image to overlay
@@ -19,8 +21,8 @@ $("imageGallery a").click(function(event){
   $image.attr("src", imageLocation);
   //show overlay
   $overlay.show();
-  //get child caption
-  var captionText= $(this).children("img").attr("<p></p>");
+  //get child's alt attribute and set caption
+  var captionText= $(this).children("img").attr("alt");
   $caption.text(captionText);
 });
 
@@ -28,4 +30,5 @@ $("imageGallery a").click(function(event){
 $overlay.click(function() {
   //hide overlay
   $overlay.hide();
+});
 });

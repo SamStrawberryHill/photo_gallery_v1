@@ -5,7 +5,7 @@ $(document).ready(function() {
   var $caption = $("<p></p>");
 
   //image to overlay
-  $image.append($image);
+  $overlay.append($image);
 
   //caption to overlay
   $overlay.append($caption);
@@ -22,7 +22,7 @@ $(document).ready(function() {
     //show overlay
     $overlay.show();
     //get child's alt attribute and set caption
-    var captionText= $(this).children("img").attr("alt");
+    var captionText= $(this).children("img").attr("title");
     $caption.text(captionText);
   });
 

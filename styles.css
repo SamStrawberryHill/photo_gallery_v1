@@ -59,7 +59,7 @@ a {
 }
 //Arrows
 #leftArrow, #rightArrow{
-	background: url('Arrows/bg-slider-arrows.png') no-repeat;
+	background: url('/Arrows/bg-slider-arrows.png') no-repeat;
 	background-size: cover;
 	width: 75px;
 	height: 75px;

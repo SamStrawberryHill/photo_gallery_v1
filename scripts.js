@@ -21,34 +21,64 @@ $(document).ready(function() {
   //click event on link to an image
   $("#imageGallery a").click(function(event){
     event.preventDefault();
-    var imageAnchor = $(this);
-    var imageLocation = $(this).attr("href");
+    var $imageAnchor = $(this);
+    var imageLocation = $imageAnchor.attr("href");
     //update overlay with imageLocation
     $image.attr("src", imageLocation);
 
     //show overlay
     $overlay.show();
-    //Show arrows
-    $('.arrows').show();
+
+    if ($imageAnchor.parent().next().length === 0) {
+      $rightArrow.hide();
+      console.log($imageAnchor.parent().next());
+    } else {
+      $rightArrow.show();
+      console.log($imageAnchor.parent().next());
+    }
+
+    if ($imageAnchor.parent().prev().length === 0) {
+      $leftArrow.hide();
+      console.log($imageAnchor.parent().prev());
+    } else {
+      $leftArrow.show();
+      console.log($imageAnchor.parent().prev());
+    }
+
+
     $leftArrow.click(function(){
-      $(this).off("click");
-      getPrevImage(imageAnchor);
+      getPrevImage($imageAnchor);
+
+      if ($imageAnchor.parent().prev().length === 0) {
+        $rightArrow.hide();
+        console.log($imageAnchor.parent().prev());
+      } else {
+        $rightArrow.show();
+        console.log($imageAnchor.parent().prev());
+      }
     });
 
     $rightArrow.click(function(){
-      getNextImage(imageAnchor);
+      getNextImage($imageAnchor);
+
+      if ($imageAnchor.parent().next().length === 0) {
+        $leftArrow.hide();
+        console.log($imageAnchor.parent().next());
+      } else {
+        $leftArrow.show();
+        console.log($imageAnchor.parent().next());
+      }
+
     });
     //get child's alt attribute and set caption
     var captionText= $(this).children("img").attr("title");
     $caption.text(captionText);
   });
+
   function getPrevImage(thisImage) {
     event.stopPropagation();
     imageParent = $(thisImage).parent().prev().children("a");
-    if(imageParent.length!==0){
-      thisImage = $(imageParent).children("a");
-    }
-    console.log(imageParent);
+
     getCurrentImage(imageParent);
 
     $leftArrow.click(function(){
@@ -58,12 +88,11 @@ $(document).ready(function() {
   }
 
   function getNextImage(thisImage) {
-    console.log(thisImage);
     event.stopPropagation();
+
+
     imageParent = $(thisImage).parent().next().children("a");
-    if(imageParent.length!==0){
-      thisImage = $(imageParent).children("a");
-    }
+
     getCurrentImage(imageParent);
 
     $rightArrow.click(function(){

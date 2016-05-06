@@ -57,7 +57,7 @@ a {
 #overlay p {
   color: white;
 }
-//Arrows
+/*//Arrows
 #leftArrow, #rightArrow{
 	background: url('/Arrows/bg-slider-arrows.png') no-repeat;
 	background-size: cover;
@@ -70,4 +70,4 @@ a {
 
 #rightArrow{
 		background-position: -75px 0px;
-  }
+  }*/

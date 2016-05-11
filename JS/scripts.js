@@ -1,10 +1,18 @@
+// var $overlay = $('<div id="overlay"></div>');
+// var $image = $("<img>");
+// var $caption = $("<p></p>");
 
 
-// $(document).ready(function() {
+
+jQuery(document).ready(function() {
+		jQuery(".fancybox").fancybox();
+	});
+  
+// // $(document).ready(function() {
 //   var $overlay = $('<div id="overlay"></div>');
 //   var $image = $("<img>");
 //   var $caption = $("<p></p>");
-//
+// //
 //   //image to overlay
 //   $overlay.append($image);
 //   //Arrows
@@ -18,7 +26,7 @@
 //
 //   //add overlay
 //   $("body").append($overlay);
-//
+// //
 //   //click event on link to an image
 //   $("#imageGallery a").click(function(event){
 //     event.preventDefault();
@@ -29,7 +37,7 @@
 //
 //     //show overlay
 //     $overlay.show();
-//
+// //
 //     if ($imageAnchor.parent().next().length === 0) {
 //       $rightArrow.hide();
 //       console.log($imageAnchor.parent().next());
@@ -71,10 +79,10 @@
 //       }
 //
 //     });
-//     //get child's alt attribute and set caption
-//     var captionText= $(this).children("img").attr("title");
-//     $caption.text(captionText);
-//   });
+  //   //get child's alt attribute and set caption
+  //   var captionText= $(this).children("img").attr("title");
+  //   $caption.text(captionText);
+  // });
 //
 //   function getPrevImage(thisImage) {
 //     event.stopPropagation();

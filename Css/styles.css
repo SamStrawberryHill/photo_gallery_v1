@@ -57,17 +57,27 @@ a {
 #overlay p {
   color: white;
 }
-/*//Arrows
-#leftArrow, #rightArrow{
-	background: url('/Arrows/bg-slider-arrows.png') no-repeat;
-	background-size: cover;
-	width: 75px;
-	height: 75px;
-	display: inline-block;
-	margin: 40px;
-	vertical-align: 50%;
+.fancybox-title-float-wrap .child {
+  background : none;
+  width: 600px;
+}
+.fancybox-nav {
+    width: 60px;
 }
 
-#rightArrow{
-		background-position: -75px 0px;
-  }*/
+.fancybox-nav span {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.fancybox-nav:hover span {
+    opacity: 1;
+}
+
+.fancybox-next {
+    right: -60px;
+}
+
+.fancybox-prev {
+    left: -60px;
+}

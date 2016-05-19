@@ -12,6 +12,7 @@
       <script type="text/javascript" src="js/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
       <link rel="stylesheet" href="js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
       <script type="text/javascript" src="js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+      <script type="text/javascript" src="HideSeek-master/jquery.hideseek.min.js">
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/styles.css">
       <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
@@ -19,11 +20,11 @@
     <body>
       <header>
         <form id="search-bar">
-          <input type="search" name="searchphotos" placeholder="Search Photos">
+          <input id="search" name="search" placeholder="Search Photos" type="search" data-list=".list">
         </form>
       </header>
       <div class="gallery">
-        <ul>
+        <ul class="list">
             <li>
               <a title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." class="fancybox" rel="gallery" href="Photos/01.jpg">
                 <img src="Photos/Thumbnails/01.jpg" alt="hay bales"/></a>

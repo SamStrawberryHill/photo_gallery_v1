@@ -4,7 +4,9 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>The Image Gallery</title>
+      <!-- Link to jquery library -->
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+      <!-- Link to lightbox fancybox plugin -->
       <script type="text/javascript" src="js/source/jquery.fancybox.js"></script>
       <link rel="stylesheet" href="js/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
       <link rel="stylesheet" href="js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
@@ -12,55 +14,92 @@
       <script type="text/javascript" src="js/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
       <link rel="stylesheet" href="js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
       <script type="text/javascript" src="js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-      <script type="text/javascript" src="HideSeek-master/jquery.hideseek.min.js">
+      <!-- link to search box plugin -->
+      <script src="js/list.js"></script>
+      <!-- link to style sheets -->
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/styles.css">
+      <!-- link to font library -->
       <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
-      <header>
-        <form id="search-bar">
-          <input id="search" name="search" placeholder="Search Photos" type="search" data-list=".list">
-        </form>
-      </header>
-      <div class="gallery">
+      <div id="gallery">
+
+        <input class="search" placeholder="Search" />
+        
         <ul class="list">
             <li>
               <a title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." class="fancybox" rel="gallery" href="Photos/01.jpg">
-                <img src="Photos/Thumbnails/01.jpg" alt="hay bales"/></a>
+                <img src="Photos/Thumbnails/01.jpg" alt="hay bales"/>
+              </a>
+                <p class="captionText">I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>
             </li>
-            <li><a title="The lake was so calm today. We had a great view of the snow on the mountains from here." class="fancybox" rel="gallery" href="Photos/02.jpg">
-                <img src="Photos/Thumbnails/02.jpg" alt="lake"/></a>
+            <li>
+              <a title="The lake was so calm today. We had a great view of the snow on the mountains from here." class="fancybox" rel="gallery" href="Photos/02.jpg">
+                <img src="Photos/Thumbnails/02.jpg" alt="lake"/>
+              </a>
+              <p class="captionText">The lake was so calm today. We had a great view of the snow on the mountains from here.</p>
             </li>
-            <li><a title="I hiked to the top of the mountain and got this picture of the canyon and trees below." class="fancybox" rel="gallery" href="Photos/03.jpg">
-                <img src="Photos/Thumbnails/03.jpg" alt="canyon"/></a>
+            <li>
+              <a title="I hiked to the top of the mountain and got this picture of the canyon and trees below." class="fancybox" rel="gallery" href="Photos/03.jpg">
+                <img src="Photos/Thumbnails/03.jpg" alt="canyon"/>
+              </a>
+                <p class="captionText">I hiked to the top of the mountain and got this picture of the canyon and trees below.</p>
             </li>
-            <li><a title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." class="fancybox" rel="gallery" href="Photos/04.jpg">
-                <img src="Photos/Thumbnails/04.jpg" alt="iceberg"/></a>
+            <li>
+              <a title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." class="fancybox" rel="gallery" href="Photos/04.jpg">
+                <img src="Photos/Thumbnails/04.jpg" alt="iceberg"/>
+              </a>
+              <p class="captionText">It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</p>
             </li>
-            <li><a title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." class="fancybox" rel="gallery" href="Photos/05.jpg">
-                <img src="Photos/Thumbnails/05.jpg" alt="desert"/></a>
+            <li>
+              <a title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." class="fancybox" rel="gallery" href="Photos/05.jpg">
+                <img src="Photos/Thumbnails/05.jpg" alt="desert"/>
+              </a>
+              <p class="captionText">The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</p>
             </li>
-            <li><a title="Fall is coming, I love when the leaves on the trees start to change color." class="fancybox" rel="gallery" href="Photos/06.jpg">
-                <img src="Photos/Thumbnails/06.jpg" alt="fall"/></a>
+            <li>
+              <a  title="Fall is coming, I love when the leaves on the trees start to change color." class="fancybox" rel="gallery" href="Photos/06.jpg">
+                <img src="Photos/Thumbnails/06.jpg" alt="fall"/>
+              </a>
+              <p class="captionText">Fall is coming, I love when the leaves on the trees start to change color.</p>
             </li>
-            <li><a title="I drove past this plantation yesterday, everything is so green!" class="fancybox" rel="gallery" href="Photos/07.jpg">
-                <img src="Photos/Thumbnails/07.jpg" alt="plantation"/></a>
+            <li>
+              <a title="I drove past this plantation yesterday, everything is so green!" class="fancybox" rel="gallery" href="Photos/07.jpg">
+                <img src="Photos/Thumbnails/07.jpg" alt="plantation"/>
+              </a>
+              <p class="captionText">I drove past this plantation yesterday, everything is so green!</p>
             </li>
-            <li><a title="My summer vacation to the Oregon Coast. I love the sandy dunes!" class="fancybox" rel="gallery" href="Photos/08.jpg">
-                <img src="Photos/Thumbnails/08.jpg" alt="dunes"/></a>
+            <li>
+              <a title="My summer vacation to the Oregon Coast. I love the sandy dunes!" class="fancybox" rel="gallery" href="Photos/08.jpg">
+                <img src="Photos/Thumbnails/08.jpg" alt="dunes"/>
+              </a>
+              <p class="captionText">My summer vacation to the Oregon Coast. I love the sandy dunes!</p>
             </li>
-            <li><a title="We enjoyed a quiet stroll down this countryside lane." class="fancybox" rel="gallery" href="Photos/09.jpg">
-                <img src="Photos/Thumbnails/09.jpg" alt="countryside lane"/></a>
+            <li>
+              <a title="We enjoyed a quiet stroll down this countryside lane." class="fancybox" rel="gallery" href="Photos/09.jpg">
+                <img src="Photos/Thumbnails/09.jpg" alt="countryside lane"/>
+              </a>
+              <p class="captionText">We enjoyed a quiet stroll down this countryside lane.</p>
             </li>
-            <li><a title="Sunset at the coast! The sky turned a lovely shade of orange." class="fancybox" rel="gallery" href="Photos/10.jpg">
-                <img src="Photos/Thumbnails/10.jpg" alt="sunset"/></a>
+            <li>
+              <a title="Sunset at the coast! The sky turned a lovely shade of orange." class="fancybox" rel="gallery" href="Photos/10.jpg">
+                <img src="Photos/Thumbnails/10.jpg" alt="sunset"/>
+              </a>
+              <p class="captionText">Sunset at the coast! The sky turned a lovely shade of orange.</p>
             </li>
-            <li><a title= "I did a tour of a cave today and the view of the landscape below was breathtaking." class="fancybox" rel="gallery" href="Photos/11.jpg">
-                <img src="Photos/Thumbnails/11.jpg" alt="cave"/></a>
+            <li>
+              <a title= "I did a tour of a cave today and the view of the landscape below was breathtaking." class="fancybox" rel="gallery" href="Photos/11.jpg">
+                <img src="Photos/Thumbnails/11.jpg" alt="cave"/>
+              </a>
+              <p class="captionText">I did a tour of a cave today and the view of the landscape below was breathtaking.</p>
             </li>
-            <li><a title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." class="fancybox" rel="gallery" href="Photos/12.jpg">
-                <img src="Photos/Thumbnails/12.jpg" alt="bluebells"/></a>
+            <li>
+              <a title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." class="fancybox" rel="gallery" href="Photos/12.jpg">
+                <img src="Photos/Thumbnails/12.jpg" alt="bluebells"/>
+              </a>
+                <p class="captionText">I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</p>
             </li>
         </ul>
       </div>

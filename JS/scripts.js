@@ -25,4 +25,10 @@ jQuery(document).ready(function() {
           padding     : 0,
           margin      : [20, 60, 20, 60] // Increase left/right margin
       });
+
+			var options = {
+    		valueNames: [ 'captionText' ]
+			};
+
+			var captionList = new List('gallery', options);
 });
